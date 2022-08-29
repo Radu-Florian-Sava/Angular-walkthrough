@@ -8,5 +8,5 @@ import { Product} from '../products';
 })
 export class ProductAlertsComponent  {
 
-  @Input() product! : product;
+  @Input() product! : Product;
 }
