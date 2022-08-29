@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
+import {Product, products} from '../products';
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -7,9 +9,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  product: Product | undefined;
 
 }
